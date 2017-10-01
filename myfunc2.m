@@ -1,4 +1,4 @@
-function F = myfunc(x)
+function F = myfunc2(x)
 A = 0.5;
 B = 0.5;
 e = 0.08;

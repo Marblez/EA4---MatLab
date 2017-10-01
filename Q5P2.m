@@ -21,8 +21,8 @@ ylabel('N(P)');
 grid on;
 
 
-x1 = fsolve(@myfunc,0)
-x2 = fsolve(@myfunc,6)
+x1 = fsolve(@myfunc2,1)
+x2 = fsolve(@myfunc2,2)
 
 
 

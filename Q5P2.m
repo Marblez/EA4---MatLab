@@ -13,7 +13,7 @@ hold();
 y=0;
 x2=0;
 fplot(y);
-xlim([1,5]);
+xlim([1,3]);
 hold();
 title('N(P) as a function of P');
 xlabel('P value');

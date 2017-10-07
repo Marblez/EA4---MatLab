@@ -18,9 +18,11 @@ count = 0;
 % Calling function yPrime
 % LOOP
 
-arr = zeros(1,10);
+arr = zeros(1,11);
 while count<=tfin
+    % Storing into an array
     arr(count+1) = yinit;
+    
     dtheta = yprime(yinit,Iin);
     yinit = yinit + h*dtheta;
 end

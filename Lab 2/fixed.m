@@ -1,7 +1,7 @@
 % Initialize Variables
 Iin = 0.5;
 yinit= -pi/2;
-h = 1;
+h = 0.01;
 tfin = 10;
 
 % hbig = 1;
@@ -22,9 +22,14 @@ arr = zeros(1,11);
 while count<=tfin
     % Storing into an array
     arr(count+1) = yinit;
-    
     dtheta = yprime(yinit,Iin);
-    yinit = yinit + h*dtheta;
+    yinit = yinit + (h/2)*(dtheta+yprime(yinit,Iin));
 end
+ 
 
-plot(0:10,arr);
+
+plot(0:10,arr,'LineWidth',2);
+xlabel('Time');
+ylabel('Theta');
+title('Theta as a function of Time');
+grid on;
